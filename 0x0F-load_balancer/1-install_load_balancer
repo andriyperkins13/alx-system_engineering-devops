@@ -11,7 +11,7 @@ apt-get -y install haproxy
 server_config=\
 "
 frontend  urbandev-frontend
-        bind 52.87.217.25:541
+        bind *:80
         mode http
         default_backend urbandev-backend
 backend urbandev-backend
